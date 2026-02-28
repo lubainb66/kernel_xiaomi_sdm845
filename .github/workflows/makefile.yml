@@ -15,16 +15,16 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/PixelExperience-Devices/kernel_xiaomi_sdm845/tree/fourteen
+          kernel-url: https://github.com/PixelExperience-Devices/kernel_xiaomi_dipper
           kernel-dir: msm-4.9
-          kernel-branch: fourteen
+          kernel-branch: ten
           config: dipper_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
           ksu-version: main
-          android-version: 12
-          aosp-clang-version: r383902
+          android-version: 11
+          aosp-clang-version: r365631c
           disable-lto: true
           anykernel3: true
